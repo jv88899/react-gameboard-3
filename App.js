@@ -420,7 +420,17 @@ class App extends Component {
                     <h5>Liabilities</h5>
                     <ul className="balance-sheet-liabilities">
                       {this.state.balanceSheetLiabilities.map((item) => (
-                        <li key={item.id}>
+                        <li
+                          key={item.id}
+                          onClick={ () => {
+                            this.setState({
+                              activeCircle: {
+                                id: item.id,
+                                type: 'balanceSheetLiabilities'
+                              }
+                            })
+                          }}
+                        >
                           <span className="item-name">{item.name}</span>
                           <span className="item-total">{item.total}</span>
                         </li>
@@ -448,7 +458,17 @@ class App extends Component {
             <h5>Operating</h5>
             <ul className="operating-inner-list">
               {this.state.operating.map((item) => (
-                <li key={item.id}>
+                <li
+                  key={item.id}
+                  onClick={ () => {
+                    this.setState({
+                      activeCircle: {
+                        id: item.id,
+                        type: 'operating'
+                      }
+                    })
+                  }}
+                >
                   <span className="item-name">{item.name}</span>
                   <span className="item-total">{item.total}</span>
                 </li>
@@ -459,7 +479,17 @@ class App extends Component {
             <h5>Investing</h5>
             <ul className="investing-inner-list">
               {this.state.investing.map((item) => (
-                <li key={item.id}>
+                <li
+                  key={item.id}
+                  onClick={ () => {
+                    this.setState({
+                      activeCircle: {
+                        id: item.id,
+                        type: 'investing'
+                      }
+                    })
+                  }}
+                >
                   <span className="item-name">{item.name}</span>
                   <span className="item-total">{item.total}</span>
                 </li>
@@ -470,7 +500,17 @@ class App extends Component {
             <h5>Financing</h5>
             <ul className="financing-inner-list">
               {this.state.financing.map((item) => (
-                <li key={item.id}>
+                <li 
+                  key={item.id}
+                  onClick={ () => {
+                    this.setState({
+                      activeCircle: {
+                        id: item.id,
+                        type: 'financing'
+                      }
+                    })
+                  }}
+                >
                   <span className="item-name">{item.name}</span>
                   <span className="item-total">{item.total}</span>
                 </li>
