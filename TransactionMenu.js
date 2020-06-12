@@ -12,6 +12,8 @@ const TransactionMenu = ({
   activeCustomerID,
   activeCustomerTotal,
   updateIncomeStatementTotals,
+  updateBalanceSheetAssetsTotal,
+  updateBalanceSheetLiabilitiesTotal
 }) => {
   return (
     <div
@@ -35,7 +37,8 @@ const TransactionMenu = ({
             activeCustomerTotal={activeCustomerTotal}
             updateIncomeStatementTotals={updateIncomeStatementTotals}
           />
-        ))}        <hr />
+        ))}        
+        <hr />
         {balanceSheetAssets.map((item) => (
           <TransactionForm
             key={item.id}
@@ -46,7 +49,21 @@ const TransactionMenu = ({
             total={item.total}
             activeCustomerID={activeCustomerID}
             activeCustomerTotal={activeCustomerTotal}
-            updateIncomeStatementTotals={updateIncomeStatementTotals}
+            updateBalanceSheetAssetsTotal={updateBalanceSheetAssetsTotal}
+          />
+        ))}
+        <hr />
+        {balanceSheetLiabilities.map((item) => (
+          <TransactionForm
+            key={item.id}
+            handleSubmitTransaction={handleSubmitTransaction}
+            id={item.id}
+            inputID={item.inputID}
+            name={item.name}
+            total={item.total}
+            activeCustomerID={activeCustomerID}
+            activeCustomerTotal={activeCustomerTotal}
+            updateBalanceSheetLiabilitiesTotal={updateBalanceSheetLiabilitiesTotal}
           />
         ))}
         <button className="transaction-menu-button-done" onClick={closeMenu}>

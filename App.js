@@ -395,6 +395,8 @@ class App extends Component {
           activeCustomerID={this.state.activeCustomerID}
           activeCustomerTotal={this.state.activeCustomerTotal}
           updateIncomeStatementTotals={this.updateIncomeStatementTotals}
+          updateBalanceSheetAssetsTotal={this.updateBalanceSheetAssetsTotal}
+          updateBalanceSheetLiabilitiesTotal={this.updateBalanceSheetLiabilitiesTotal}
         />
       </div>
     );
