@@ -11,7 +11,6 @@ const TransactionForm = ({
   activeCustomerTotal,
 }) => {
 
-  console.log('input id', inputID)
   const { register, handleSubmit, reset } = useForm({
     defaultValues: {
       [inputID]: 0,

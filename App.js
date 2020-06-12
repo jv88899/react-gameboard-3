@@ -102,14 +102,54 @@ class App extends Component {
       }
     ],
     balanceSheetLiabilities: [
-      { id: "001", name: "Claims Payable", total: 0 },
-      { id: "002", name: "IBNR", total: 0 },
-      { id: "003", name: "Salary Payable", total: 0 },
-      { id: "004", name: "Broker Payable", total: 0 },
-      { id: "005", name: "Accounts Payable", total: 0 },
-      { id: "006", name: "Income Taxes Payable", total: 0 },
-      { id: "007", name: "Loan Payable", total: 0 },
-      { id: "008", name: "Unearned Premiums", total: 0 },
+      {
+        id: '001',
+        name: 'Claims Payable',
+        inputID: 'claimsPayable',
+        total: 0
+      },
+      {
+        id: '002',
+        name: 'IBNR',
+        inputID: 'ibnr',
+        total: 0
+      },
+      {
+        id: '003',
+        name: 'Salary Payable',
+        inputID: 'salaryPayable',
+        total: 0
+      },
+      {
+        id: '004',
+        name: 'Broker Payable',
+        inputID: 'brokerPayable',
+        total: 0
+      },
+      {
+        id: '005',
+        name: 'Accounts Payable',
+        inputID: 'accountsPayable',
+        total: 0
+      },
+      {
+        id: '006',
+        name: 'Income Taxes Payable',
+        inputID: 'incomeTaxesPayable',
+        total: 0
+      },
+      {
+        id: '007',
+        name: 'Loan Payable',
+        inputID: 'loanPayable',
+        total: 0
+      },
+      {
+        id: '008',
+        name: 'Unearned Premiums',
+        inputID: 'unearnedPremiums',
+        total: 0
+      }
     ],
     netAssetsAssetsTotal: 0,
     netAssetsLiabilitiesTotal: 0,
