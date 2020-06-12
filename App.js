@@ -304,7 +304,17 @@ class App extends Component {
                     <h5>Assets</h5>
                     <ul className="balance-sheet-assets">
                       {this.state.balanceSheetAssets.map((item) => (
-                        <li key={item.id}>
+                        <li
+                          key={item.id}
+                          onClick={ () => {
+                            this.setState({
+                              activeCircle: {
+                                id: item.id,
+                                type: "balanceSheetAssets"
+                              }
+                            })
+                          }}
+                        >
                           <span className="item-name">{item.name}</span>
                           <span className="item-total">{item.total}</span>
                         </li>
