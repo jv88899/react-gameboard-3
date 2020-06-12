@@ -487,6 +487,9 @@ class App extends Component {
           incomeStatement={this.state.incomeStatement}
           balanceSheetAssets={this.state.balanceSheetAssets}
           balanceSheetLiabilities={this.state.balanceSheetLiabilities}
+          operating={this.state.operating}
+          investing={this.state.investing}
+          financing={this.state.financing}
           activeCustomerID={this.state.activeCustomerID}
           activeCustomerTotal={this.state.activeCustomerTotal}
           updateIncomeStatementTotals={this.updateIncomeStatementTotals}

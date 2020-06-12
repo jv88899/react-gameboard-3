@@ -9,6 +9,9 @@ const TransactionMenu = ({
   incomeStatement,
   balanceSheetAssets,
   balanceSheetLiabilities,
+  operating,
+  investing,
+  financing,
   activeCustomerID,
   activeCustomerTotal,
   updateIncomeStatementTotals,
@@ -28,6 +31,7 @@ const TransactionMenu = ({
         <p>Enter the amount of your transaction and click the Submit button.</p>
       </div>
       <div className="transaction-menu-inner">
+        <hr />
         <h3>Income Statment</h3>
         {incomeStatement.map((item) => (
           <TransactionForm
@@ -72,6 +76,49 @@ const TransactionMenu = ({
             updateBalanceSheetLiabilitiesTotal={updateBalanceSheetLiabilitiesTotal}
           />
         ))}
+        <hr />
+        <h3>Operating</h3>
+        {operating.map((item => (
+          <TransactionForm
+            key={item.id}
+            handleSubmitTransaction={handleSubmitTransaction}
+            id={item.id}
+            inputID={item.inputID}
+            name={item.name}
+            total={item.total}
+            activeCustomerID={activeCustomerID}
+            activeCustomerTotal={activeCustomerTotal}
+          />
+        )))}
+        <hr />
+        <h3>Investing</h3>
+        {investing.map((item) => (
+          <TransactionForm
+            key={item.id}
+            handleSubmitTransaction={handleSubmitTransaction}
+            id={item.id}
+            inputID={item.inputID}
+            name={item.name}
+            total={item.total}
+            activeCustomerID={activeCustomerID}
+            activeCustomerTotal={activeCustomerTotal}
+          />
+        ))}
+        <hr />
+        <h3>Financing</h3>
+        {financing.map((item) => (
+          <TransactionForm
+            key={item.id}
+            handleSubmitTransaction={handleSubmitTransaction}
+            id={item.id}
+            inputID={item.inputID}
+            name={item.name}
+            total={item.total}
+            activeCustomerID={activeCustomerID}
+            activeCustomerTotal={activeCustomerTotal}
+          />
+        ))}
+        <hr />
       </div>
       <div className="transaction-menu-button-done-holder">
         <button
