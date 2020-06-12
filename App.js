@@ -390,6 +390,8 @@ class App extends Component {
           }}
           handleSubmitTransaction={this.handleSubmitTransaction}
           incomeStatement={this.state.incomeStatement}
+          balanceSheetAssets={this.state.balanceSheetAssets}
+          balanceSheetLiabilities={this.state.balanceSheetLiabilities}
           activeCustomerID={this.state.activeCustomerID}
           activeCustomerTotal={this.state.activeCustomerTotal}
           updateIncomeStatementTotals={this.updateIncomeStatementTotals}

@@ -7,6 +7,8 @@ const TransactionMenu = ({
   transactionMenuVisible,
   handleSubmitTransaction,
   incomeStatement,
+  balanceSheetAssets,
+  balanceSheetLiabilities,
   activeCustomerID,
   activeCustomerTotal,
   updateIncomeStatementTotals,
