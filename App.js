@@ -154,15 +154,50 @@ class App extends Component {
     netAssetsAssetsTotal: 0,
     netAssetsLiabilitiesTotal: 0,
     operating: [
-      { id: "001", name: "Pharmacies", total: 0 },
-      { id: "002", name: "Medical Providers", total: 0 },
-      { id: "003", name: "Employees", total: 0 },
-      { id: "004", name: "Brokers", total: 0 },
-      { id: "005", name: "Vendors", total: 0 },
-      { id: "006", name: "Taxing Authority", total: 0 },
+
+      {
+        id: '001',
+        name: 'Pharmacies',
+        inputID: 'pharmacies',
+        total: 0
+      },
+      {
+        id: '002',
+        name: 'Medical Providers',
+        inputID: 'medicalProviders',
+        total: 0
+      },
+      {
+        id: '003',
+        name: 'Employees',
+        inputID: 'employees',
+        total: 0
+      },
+      {
+        id: '004',
+        name: 'Brokers',
+        inputID: 'brokers',
+        total: 0
+      },
+      {
+        id: '005',
+        name: 'Vendors',
+        inputID: 'vendors',
+        total: 0
+      },
+      {
+        id: '006',
+        name: 'Taxing Authority',
+        inputID: 'taxingAuthority',
+        total: 0
+      }
     ],
-    investing: [{ id: "001", name: "Carlson Properties", total: 0 }],
-    financing: [{ id: "001", name: "Wells Fargo Bank", total: 0 }],
+    investing: [
+      {id: '001', name: 'Carlson Properties', inputID: 'carlsonProperties', total: 0}
+    ],
+    financing: [
+      {id: '001', name: 'Wells Fargo Bank', inputID: 'wellsFargoBank', total: 0}
+    ],
     incomeStatementExpenseTotal: 0,
     incomeStatementRevenueTotal: 0,
   };
