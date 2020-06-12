@@ -76,10 +76,30 @@ class App extends Component {
       },
     ],
     balanceSheetAssets: [
-      { id: "001", name: "Cash", total: 0 },
-      { id: "002", name: "Investments", total: 0 },
-      { id: "003", name: "Premium Receivables", total: 0 },
-      { id: "004", name: "Property & Equipment", total: 0 },
+      {
+        id: '001',
+        name: 'Cash',
+        inputID: 'cash',
+        total: 0
+      },
+      {
+        id: '002',
+        name: 'Investments',
+        inputID: 'investments',
+        total: 0
+      },
+      {
+        id: '003',
+        name: 'Premium Receivables',
+        inputID: 'premiumReceivables',
+        total: 0
+      },
+      {
+        id: '004',
+        name: 'Property & Equipment',
+        inputID: 'propertyAndEquipment',
+        total: 0
+      }
     ],
     balanceSheetLiabilities: [
       { id: "001", name: "Claims Payable", total: 0 },
